@@ -70,6 +70,7 @@ def runner
   current_total = initial_round
   until current_total > 21
     binding.pry
+    hit?(current_total)
   end
   end_game(current_total)
 end
