@@ -55,23 +55,23 @@ end
 # get every test to pass before coding runner below #
 #####################################################
 
-def runner
-  welcome
-  sum = initial_round
-  until sum > 21
-    sum = hit?(sum)
-    display_card_total(sum)
-  end
-  end_game(sum)
-end
-
 # def runner
 #   welcome
-#   current_total = initial_round
-#   while current_total <= 21
-#     hand = hit?(current_total)
+#   sum = initial_round
+#   until sum > 21
+#     sum = hit?(sum)
+#     display_card_total(sum)
 #   end
-#   end_game(current_total)
+#   end_game(sum)
 # end
+
+def runner
+  welcome
+  current_total = initial_round
+  while current_total <= 21
+    current_hand = hit?(current_total)
+  end
+  end_game(current_total)
+end
 
 runner
