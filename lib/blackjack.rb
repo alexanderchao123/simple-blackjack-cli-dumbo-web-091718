@@ -76,4 +76,4 @@ def runner
 end
 
 # runner
-hit?(initial_round)
+p hit?(initial_round)
