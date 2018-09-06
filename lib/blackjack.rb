@@ -58,7 +58,7 @@ end
 def runner
   welcome
   sum = initial_round
-  while sum <= 21
+  until sum > 21
     current_hand = hit?(sum)
     sum = current_hand if current_hand.is_a?(Integer)
     display_card_total(sum)
