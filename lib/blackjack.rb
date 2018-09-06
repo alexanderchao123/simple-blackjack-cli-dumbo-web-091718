@@ -68,9 +68,9 @@ end
 def runner
   welcome
   current_total = initial_round
-  until current_total > 21
+  while current_total <= 21
+    hand = hit?(current_total)
     binding.pry
-    hit?(current_total)
   end
   end_game(current_total)
 end
