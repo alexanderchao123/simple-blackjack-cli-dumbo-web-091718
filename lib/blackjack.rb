@@ -67,11 +67,12 @@ end
 
 def runner
   welcome
-  current_total = initial_round
-  while current_total <= 21
-    current_hand = hit?(current_total)
+  sum = initial_round
+  while sum <= 21
+    current_hand = hit?(sum)
+    sum = current_hand if current_hand.is_a?(Integer)
   end
-  end_game(current_total)
+  end_game(sum)
 end
 
 runner
