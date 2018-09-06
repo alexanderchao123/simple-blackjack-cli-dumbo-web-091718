@@ -60,9 +60,7 @@ def runner
     current_hand = hit?(sum)
     if current_hand.is_a? Integer
       sum = current_hand
-      display_card_total(current_hand)
-    else
-
+      display_card_total(sum)
     end
   end
   end_game(sum)
