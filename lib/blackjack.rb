@@ -67,7 +67,7 @@ end
 
 def runner
   welcome
-  sum = initial_round
+  current_total = initial_round
   until sum > 21
     binding.pry
     # current_hand = hit?(sum)
